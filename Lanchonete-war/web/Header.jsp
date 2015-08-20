@@ -9,9 +9,9 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Lanchonete</title>
+        <title>+Lanchonete+</title>
         <link rel="Stylesheet" href="Assets/css/bootstrap.min.css">
         <script src="Assets/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body background="Imagem/fundo.jpg">
  
