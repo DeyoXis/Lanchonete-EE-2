@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 15/07/2015, 13:53:53
+    Document   : conheca
+    Created on : 27/08/2015, 14:30:57
     Author     : info206
 --%>
 
@@ -9,10 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        <title>JSP Page</title>
     </head>
     <body>
- 
-        <h1></h1>
-
+        <h1>conheca</h1>
 <jsp:include page="Footer.jsp"/>

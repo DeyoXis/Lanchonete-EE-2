@@ -1,6 +1,6 @@
 <%-- 
-    Document   : index
-    Created on : 15/07/2015, 13:53:53
+    Document   : Cardapio
+    Created on : 27/08/2015, 14:16:45
     Author     : info206
 --%>
 
@@ -9,10 +9,8 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title></title>
+        <title>JSP Page</title>
     </head>
     <body>
- 
-        <h1></h1>
-
+        <h1>cardapio</h1>
 <jsp:include page="Footer.jsp"/>
