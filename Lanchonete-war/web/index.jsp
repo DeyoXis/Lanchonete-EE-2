@@ -12,7 +12,11 @@
         <title></title>
     </head>
     <body>
- 
-        <h1></h1>
 
-<jsp:include page="Footer.jsp"/>
+        <jsp:include page="Footer.jsp"></jsp:include>
+        
+        <table>
+            <tr>
+                <th style="padding-left: 50px"> <img src="Imagem/imagem 1.jpg" width="150%" heigth="100%"</th>
+            </tr>
+        </table>

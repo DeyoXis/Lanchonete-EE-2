@@ -17,7 +17,7 @@
         
         <!--MENU DE NAVEGAÇÃO-->
         <nav class="navbar navbar-default navbar-static-top">
-            <div class="container" style="padding-left:500px">
+            <div class="container" style="padding-left:45%">
   
                 <a class="navbar-brand" href="index.jsp"><font size="2">INÍCIO</a>
                     <ul class="nav navbar-nav">
@@ -40,3 +40,4 @@
         <!--<div id="Hamburguer">
             <img src="Imagem/HAMBURGUER DESENHO.png" width="250 px">   
         </div>-->
+        
