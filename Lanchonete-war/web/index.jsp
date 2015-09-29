@@ -15,8 +15,21 @@
 
         <jsp:include page="Footer.jsp"></jsp:include>
         
-        <table>
+        <div align="center">
             <tr>
-                <th style="padding-left: 50px"> <img src="Imagem/imagem 1.jpg" width="150%" heigth="100%"</th>
+                <th></th><img src="Imagem/sanduiche.jpg" width="90%" heigth="100%"></th>
             </tr>
-        </table>
+        </div>
+        
+        <br /><br /><br /><br /><br />
+        
+        <div align="center">
+            
+            <tr>
+                <td><a href="Cardapio.jsp"><img src="Imagem/saladas.png"  width="180px" height="130px"</td>
+                <td><a href="Cardapio.jsp"><img src="Imagem/hamburguerer.png" width="180px" height="130px"</td>
+                <td><a href="Cardapio.jsp"><img src="Imagem/pizza.png" width="150px" height="130px"</td>
+                <td><a href="Cardapio.jsp"><img src="Imagem/bebidas.png" width="150px" height="130px"</a></td>
+            </tr>
+         
+        </div>

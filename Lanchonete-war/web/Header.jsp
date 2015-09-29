@@ -17,11 +17,11 @@
         
         <!--MENU DE NAVEGAÇÃO-->
         <nav class="navbar navbar-default navbar-static-top">
-            <div class="container" style="padding-left:45%">
+            <div class="container">
   
                 <a class="navbar-brand" href="index.jsp"><font size="2">INÍCIO</a>
                     <ul class="nav navbar-nav">
-                    <li class="active">
+                    <li>
                 <a href="Cardapio.jsp">CARDÁPIO</a>
                     </li>
                     <li>
@@ -30,7 +30,12 @@
                     <li>
                 <a href="cadastro.jsp">CADASTRO</a>
                     </li>
-                    <img src="Imagem/icones 2.png" width="100 px" style="padding-top: 10px">
+                    <li style="padding-left: 350px">
+                    <img src="Imagem/icones 2.png" width="100 px"  style="padding-top: 10px">
+                    </li>
+                    <li style="padding-left: 30px">
+                    <img src="Imagem/HAMBURGUER DESENHO.png" width="75 px">
+                    </li>
                     </ul>
             </div>
         </nav>
