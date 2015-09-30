@@ -1,0 +1,55 @@
+/* 
+    Document   : Style
+    Created on : 30/09/2015, 14:41:12
+    Author     : info206
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+/*Aqui Começa o CSS --> Lanchonete Java Web*/
+
+
+/*<index> */
+#centro {
+    
+}
+/*</index>*/
+
+
+/*<conheca>*/
+                                                        /*PRIMERO*/
+#amarelo {                                  
+    margin-top: -2%;
+    height: 50px;
+}
+
+#Venha {
+    margin-bottom: 4%;
+}
+                                                         /*TERCEIRO*/
+#branco{
+    background: white;
+    width: 100%;
+    position: absolute;
+}
+
+#texto{
+    float:left;
+    text-align: justify;
+    width: 40%;
+    position: absolute;
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+
+#ham{
+    float: right;
+    position: relative;
+    margin-top: 4%;
+}
+/*<conheca>*/
