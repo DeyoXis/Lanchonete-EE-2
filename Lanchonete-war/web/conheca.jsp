@@ -17,7 +17,7 @@
 <!-- PRIMEIRO -->
 
     <div id="amarelo">
-        <img src="Imagem/amarelo.png">
+        <img src="Imagem/amarelo.png" width="100%">
     </div>
     
     

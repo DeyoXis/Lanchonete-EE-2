@@ -14,7 +14,7 @@
         <link rel="Stylesheet" href="Assets/css/bootstrap.min.css">
         <script src="Assets/js/bootstrap.min.js"></script>
     </head>
-    <body background="Imagem/fundo4.jpg" margin-left="auto" margin-right="auto">
+    <body background="" margin-left="auto" margin-right="auto">
         
         <!--MENU DE NAVEGAÇÃO-->
         <nav class="navbar navbar-default navbar-static-top">

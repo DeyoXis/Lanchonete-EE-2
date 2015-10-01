@@ -53,3 +53,51 @@ root {
     margin-top: 4%;
 }
 /*<conheca>*/
+
+
+/*Cardápio*/
+                                                       /*PRIMEIRO*/
+ #amarelo2 {
+    margin-top: -2%;
+    height: 50px;                         
+}
+                                                       
+#Cardapio {
+     margin-bottom: 4%;
+     float: right;
+     position: relative;
+     margin-right: 20%;
+}
+
+
+#branco2 {
+    background: white;
+    width: 100%;
+    position: absolute;
+    margin-top: 12%;
+}
+
+#coca {
+    float: right;
+    position: relative;
+    margin-top: 14%;
+}
+
+#lista {
+    position: relative;
+    width:100%;
+    margin-top: 55%;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+#botao {
+    float: right;
+    position: relative;
+    background: gold;
+    border-radius: 7px;
+    padding: 2%;
+    padding-bottom: 1%;
+    margin-top: 3%;
+    margin-right: 3%;
+}
