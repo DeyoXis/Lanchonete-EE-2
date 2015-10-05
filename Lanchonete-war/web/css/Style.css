@@ -101,3 +101,29 @@ root {
     margin-top: 3%;
     margin-right: 3%;
 }
+
+/*Index*/
+
+#branco3 {
+    position: fixed;
+    width: 100%;
+    alignment-adjust: central;
+}
+
+#cadastro {
+    width: 50%;
+    float:left;
+    margin-left: 35%;
+    position: absolute;
+}
+
+#botaologin {
+    float: right;
+    position: relative;
+    background: gold;
+    border-radius: 7px;
+    padding: 2%;
+    padding-bottom: 1%;
+    margin-top: 25%;
+    margin-right: 10%;
+}

@@ -1,10 +1,11 @@
 <%-- 
     Document   : index
-    Created on : 15/07/2015, 13:53:53
+    Created on : 02/10/2015, 16:30:54
     Author     : info206
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <jsp:include page="Header.jsp"/>
 <html>
     <head>
@@ -14,23 +15,62 @@
     </head>
     <body>
 
-        <jsp:include page="Footer.jsp"></jsp:include>
-        
-        <div id="centro" align="center">
-            <tr>
-                <th></th><img src="Imagem/sanduiche.jpg" width="90%" heigth="100%"></th>
-            </tr>
-        </div>
-        
-        <br /><br /><br /><br /><br />
-        
-        <div align="center">
+
+    <div id="amarelo" align="center">
+        <img src="Imagem/amarelo3.png" width="90%">
+    </div>
+
+
+    <div id="Venha" align="center">
+        <font face="Segoe Print" size="8">Cadastro</font>
+    </div>  
+
+    <div id="branco3" align="center">
+    <img src="Imagem/Branco3.png" width="90%">
+    </div>
+
+    <br />  
+    <br />  
+    <br />  
+    <br />
+        <form action="cadastrar" method="POST">  
+  
+     
+            <div id="cadastro">  
+                 
+                
+                    Nome:  
+                    <input type="text" size="30" name="nomeclientes"><br /><br />                
+                 
+                
+                  
+                    Senha:
+                    <input type="text" size="30" name="senhaclientes"><br /><br />  
+                  
+                
+               
+                    Telefone:  
+                    <input type="text" size="30" name="telefone"><br /><br />   
+                  
+                 
+                  
+                    Endereço:  
+                    <input type="text" size="30" name="endereco"><br /><br />  
+                  
+                
+                  
+                    <input type="reset" value="Limpar dados"> </td>  
+                    <input type="submit" value="Enviar dados"></td>  
+                     
+                  
+            </div>
+ </form>
+    
             
-            <tr>
-                <td><a href="Cardapio.jsp"><img src="Imagem/saladas.png"  width="180px" height="130px"</td>
-                <td><a href="Cardapio.jsp"><img src="Imagem/hamburguerer.png" width="180px" height="130px"</td>
-                <td><a href="Cardapio.jsp"><img src="Imagem/pizza.png" width="150px" height="130px"</td>
-                <td><a href="Cardapio.jsp"><img src="Imagem/bebidas.png" width="150px" height="130px"</a></td>
-            </tr>
-         
-        </div>
+            <div id="botaologin"><a href="logincliente.jsp">
+                <font size="3px">LOGIN</font></p>
+            </a></div>
+    
+    
+    
+<jsp:include page="Footer.jsp"/>

@@ -14,8 +14,6 @@
     </head>
     <body>
 
-<jsp:include page="Footer.jsp"/>
-
 <!-- PRIMEIRO -->
 
     <div id="amarelo2">
@@ -53,7 +51,9 @@
     </div>
     
     
-        <div id="botao"><a href="cadastro.jsp">
-        <p><font size="3px">Cadastre-se e peça já!</font></p>
+        <div id="botao"><a href="logincliente.jsp">
+        <p><font size="3px">Faça já o seu pedido!</font></p>
          </a></div>
    
+    
+    <jsp:include page="Footer.jsp"/>
