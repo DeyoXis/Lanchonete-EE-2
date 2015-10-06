@@ -1,7 +1,7 @@
 <%-- 
-    Document   : Pedidos
-    Created on : 02/10/2015, 17:09:05
-    Author     : info206
+    Document   : erro
+    Created on : 05/10/2015, 22:45:50
+    Author     : Rafael Pereira
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -21,7 +21,7 @@
 
 
         <div id="Venha" align="center">
-            <font face="Segoe Print" size="8">Faça o seu Pedido!</font>
+            <font face="Segoe Print" size="8">OPS!</font>
         </div>  
 
         <div id="branco3" align="center">
@@ -29,13 +29,12 @@
         </div>
         
         
+        <div id="erro" align="center">
+            <h1><font face="Segoe Print" color="#FF0000"><u>Acesso negado! Usuário ou Senha NÃO conferem!</u></font></h1>
+        </div>
         
         
-        
-        
-        
-        
+
         
         
 <jsp:include page="Footer.jsp"/>
-

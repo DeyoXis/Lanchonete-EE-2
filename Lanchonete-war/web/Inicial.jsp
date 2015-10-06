@@ -11,13 +11,13 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
         <link href="css/Style.css" rel="stylesheet" type="text/css">
+        <link rel="Stylesheet" href="Assets/css/bootstrap.min.css">
     </head>
-    <body>
-
-        
+    <body>              
+              
         <div id="centro" align="center">
             <tr>
-                <th></th><img src="Imagem/sanduiche.jpg" width="90%" heigth="100%"></th>
+                <th></th><img src="Imagem/imagem1.jpg" width="90%" heigth="100%"></th>
             </tr>
         </div>
         
@@ -25,12 +25,11 @@
         
         <div align="center">
             
-            <tr>
-                <td><a href="Cardapio.jsp"><img src="Imagem/saladas.png"  width="180px" height="130px"</td>
-                <td><a href="Cardapio.jsp"><img src="Imagem/hamburguerer.png" width="180px" height="130px"</td>
-                <td><a href="Cardapio.jsp"><img src="Imagem/pizza.png" width="150px" height="130px"</td>
-                <td><a href="Cardapio.jsp"><img src="Imagem/bebidas.png" width="150px" height="130px"</a></td>
-            </tr>
+            <a href="Cardapio.jsp"><img src="Imagem/saladas.png"  width="180px" height="130px"></a>
+            <a href="Cardapio.jsp"><img src="Imagem/hamburguerer.png" width="180px" height=,"130px"></a>
+            <a href="Cardapio.jsp"><img src="Imagem/pizza.png" width="150px" height="130px"></a>
+            <a href="Cardapio.jsp"><img src="Imagem/bebidas.png" width="150px" height="130px"></a>
+            
          
         </div>
         

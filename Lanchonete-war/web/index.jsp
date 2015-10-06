@@ -33,6 +33,11 @@
     <br />  
     <br />  
     <br />
+    
+    <div id="listapreco" align="center">
+            <img src="Imagem/cardapio com preco.png" width="60%">
+    </div>
+    
         <form action="cadastrar" method="POST">  
   
      
@@ -57,19 +62,20 @@
                     Endereço:  
                     <input type="text" size="30" name="endereco"><br /><br />  
                   
-                
+                    
+                    
+                    Pedido:  
+                    <input type="text" size="30" name="pedido"><br /><br />  
                   
-                    <input type="reset" value="Limpar dados"> </td>  
-                    <input type="submit" value="Enviar dados"></td>  
+                    <input type="reset" value="Limpar dados">   
+                    <input type="submit" value="Enviar dados">  
                      
                   
             </div>
  </form>
     
             
-            <div id="botaologin"><a href="logincliente.jsp">
-                <font size="3px">LOGIN</font></p>
-            </a></div>
+            
     
     
     

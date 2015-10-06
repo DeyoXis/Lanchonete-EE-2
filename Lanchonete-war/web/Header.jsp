@@ -31,10 +31,7 @@
                     <li>
                 <a href="index.jsp">CADASTRO</a>
                     </li>
-                    <li style="padding-left: 350px">
-                    <img src="Imagem/icones 2.png" width="100 px"  style="padding-top: 10px">
-                    </li>
-                    <li style="padding-left: 30px"><a href="Login.jsp">
+                    <li><a href="Login.jsp">
                             <img src="Imagem/HAMBURGUER DESENHO.png" width="75 px"></a>
                     </li>
                     </ul>
@@ -43,7 +40,7 @@
         <!--/MENU DE NAVEGAÇÃO-->
         
        
-        <!--<div id="Hamburguer">
-            <img src="Imagem/HAMBURGUER DESENHO.png" width="250 px">   
+        <!--<div id="Hamburguer"><a href="Login.jsp">
+                <img src="Imagem/HAMBURGUER DESENHO.png" width="100 px"></a> 
         </div>-->
         

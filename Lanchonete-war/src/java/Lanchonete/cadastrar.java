@@ -51,7 +51,7 @@ public class cadastrar extends HttpServlet {
         String senhaclientes = request.getParameter("senhaclientes");    
         String telefone = request.getParameter("telefone");
         String endereco = request.getParameter("endereco");
-        
+        String pedido = request.getParameter("pedido");
         
         Connection connection = null;
         Statement statement = null;
@@ -63,16 +63,17 @@ public class cadastrar extends HttpServlet {
             
             connection = DriverManager.getConnection(connectionURL, User, Pass);
             statement = connection.createStatement();
-            PreparedStatement stmt = connection.prepareStatement("INSERT INTO clientes VALUES(?,?,?,?,?)");
+            PreparedStatement stmt = connection.prepareStatement("INSERT INTO clientes VALUES(?,?,?,?,?,?)");
             
             stmt.setInt(1, 0);  
             stmt.setString(2, nomeclientes);       
             stmt.setString(3, senhaclientes); 
             stmt.setString(4, telefone);     
             stmt.setString(5, endereco); 
+            stmt.setString(6, pedido);
             stmt.executeUpdate();
             
-            RequestDispatcher dispatcher = request.getRequestDispatcher ("logincliente.jsp");  
+            RequestDispatcher dispatcher = request.getRequestDispatcher ("sucesso.jsp");  
     dispatcher.forward(request, response); 
     
         }  catch (SQLException e) {

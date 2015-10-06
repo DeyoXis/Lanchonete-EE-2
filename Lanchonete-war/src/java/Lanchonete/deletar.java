@@ -1,5 +1,6 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package Lanchonete;
@@ -23,15 +24,14 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author info206
+ * @author Rafael Pereira
  */
-@WebServlet(name = "login", urlPatterns = {"/login"})
-public class login extends HttpServlet {
+@WebServlet(name = "deletar", urlPatterns = {"/deletar"})
+public class deletar extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP
-     * <code>GET</code> and
-     * <code>POST</code> methods.
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
      *
      * @param request servlet request
      * @param response servlet response
@@ -39,61 +39,47 @@ public class login extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException, ClassNotFoundException, SQLException {     
+            throws ServletException, IOException, ClassNotFoundException, SQLException {
+        response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
+        Class.forName("com.mysql.jdbc.Driver");   
+
         String connectionURL = "jdbc:mysql://127.0.0.1/lanchonete";
         String User = "root";
         String Pass = "123456";
         
         
-        String usuario = request.getParameter("usuario");    
-        String senha = request.getParameter("senha");
+        String nomeclientes = request.getParameter("nomeclientes");
         
         
         Connection connection = null;
-        ResultSet rs = null;       
-        Class.forName("com.mysql.jdbc.Driver");
+        Statement statement = null;
+        ResultSet rs = null;
         
-        response.setContentType("text/html;charset=UTF-8");
         try {
             
             connection = DriverManager.getConnection(connectionURL, User, Pass);
-            PreparedStatement stmt = connection.prepareStatement("select * from login where usuario=? and senha=?");
-            
-     
-            stmt.setString(1, usuario);
-            stmt.setString(2, senha);
-            rs = stmt.executeQuery();
+            statement = connection.createStatement();
             
             
+            PreparedStatement stmt = connection.prepareStatement("DELETE FROM clientes WHERE nomeclientes=?");
             
-            if (rs.next()) {
-                
-             
-                
-                 RequestDispatcher dispatcher = request.getRequestDispatcher ("consultar.jsp");  
+            stmt.setString(1,nomeclientes);
+            stmt.executeUpdate();
+            stmt.close();
+            
+            RequestDispatcher dispatcher = request.getRequestDispatcher ("consultar.jsp");  
     dispatcher.forward(request, response); 
-                
-            } else {
-                
-                
-                RequestDispatcher dispatcher = request.getRequestDispatcher ("erro.jsp");  
-    dispatcher.forward(request, response);
-    
-                         
-            }
-            
-            
-        } finally {            
-            out.close();
+           
+        } catch (SQLException e) {
+            out.println("Erro no sql" + e.getMessage());
         }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
-     * Handles the HTTP
-     * <code>GET</code> method.
+     * Handles the HTTP <code>GET</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -106,15 +92,14 @@ public class login extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(deletar.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(deletar.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
     /**
-     * Handles the HTTP
-     * <code>POST</code> method.
+     * Handles the HTTP <code>POST</code> method.
      *
      * @param request servlet request
      * @param response servlet response
@@ -127,9 +112,9 @@ public class login extends HttpServlet {
         try {
             processRequest(request, response);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(deletar.class.getName()).log(Level.SEVERE, null, ex);
         } catch (SQLException ex) {
-            Logger.getLogger(login.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(deletar.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 
@@ -142,4 +127,5 @@ public class login extends HttpServlet {
     public String getServletInfo() {
         return "Short description";
     }// </editor-fold>
+
 }

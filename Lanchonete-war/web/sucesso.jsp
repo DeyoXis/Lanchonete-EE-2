@@ -1,9 +1,8 @@
 <%-- 
-    Document   : Pedidos
-    Created on : 02/10/2015, 17:09:05
+    Document   : sucesso
+    Created on : 06/10/2015, 16:07:19
     Author     : info206
 --%>
-
 
 <%@page import="java.sql.DriverManager"%>
 <%@page import="java.sql.ResultSet"%>
@@ -12,7 +11,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <jsp:include page="Header.jsp"/>
-
 <%
             
             String connectionURL = "jdbc:mysql://127.0.0.1/lanchonete";
@@ -25,7 +23,6 @@
             ResultSet rs = null;
             
         %>
-        
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -40,34 +37,15 @@
 
 
         <div id="Venha" align="center">
-            <font face="Segoe Print" size="8">Controle de Cadastros</font>
+            <font face="Segoe Print" size="8">Seu pedido foi feito com sucesso!</font>
         </div>  
 
         <div id="branco3" align="center">
             <img src="Imagem/Branco3.png" width="90%">
         </div>
         
-        <form action="deletar" method="POST">  
-  
-     
-                <div id="deletar">  
-                 
-                    Nome: 
-                    <input type="text" size="30" name="nomeclientes">
-                    
-                    <input type="submit" value="Excluir"> 
-                    
-                </div>
-                
-            </form>
-  
-     
-            <div id="consulta">  
-                 
-                
+        <div id="consulta2">
             
-        
-        
         <%
             
             Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -82,20 +60,14 @@
             
                 out.println("<tr>");
             
-                out.println("<td COLSPAN=5 ALIGN=MIDDLE BGCOLOR=#FF6347><b>Clientes Cadastrados</b></td>");
+                out.println("<td COLSPAN=5 ALIGN=MIDDLE BGCOLOR=#FF6347><b>Tabela de Pedido</b></td>");
                 
                 out.println("</tr>");
                 
                 out.println("<tr>");
-            
-                out.println("<td ALIGN=MIDDLE WIDTH=60 BGCOLOR=#FF6347><b>ID</b></td>");
                 
                 out.println("<td ALIGN=MIDDLE WIDTH=150 BGCOLOR=#FF6347><b>Nome</b></td>");
-                
-                out.println("<td ALIGN=MIDDLE WIDTH=150 BGCOLOR=#FF6347><b>Telefone</b></td>");
-                
-                out.println("<td ALIGN=MIDDLE WIDTH=150 BGCOLOR=#FF6347><b>Endereço</b></td>");
-                
+                                                
                 out.println("<td ALIGN=MIDDLE WIDTH=150 BGCOLOR=#FF6347><b>Pedido</b></td>");
             
                 out.println("</tr>");
@@ -103,15 +75,11 @@
             while (rs.next()) {
                 out.println("<tr>");
                 
-                out.println("<td ALIGN=MIDDLE>" + rs.getString ("idclientes") + "</td>");
-                
                 out.println("<td ALIGN=MIDDLE>" + rs.getString ("nomeclientes") + "</td>");
-                
-                out.println("<td ALIGN=MIDDLE>" + rs.getString ("telefone") + "</td>");
-                
-                out.println("<td ALIGN=MIDDLE>" + rs.getString ("endereco") + "</td>");
-                
+                                               
                 out.println("<td ALIGN=MIDDLE>" + rs.getString ("pedido") + "</td>");
+                
+                
             }
             
             out.println("</table>");
@@ -120,6 +88,8 @@
         
         
         %>
-            </div>
         
-<jsp:include page="Footer.jsp"/>
+        </div>
+        
+        
+  <jsp:include page="Footer.jsp"/>

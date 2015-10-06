@@ -12,12 +12,11 @@ root {
 
 /*Aqui Começa o CSS --> Lanchonete Java Web*/
 
-
-/*<index> */
-#centro {
-    
+#Hamburguer {
+    float: right;
+    position: absolute;
+    margin-left: 90%;
 }
-/*</index>*/
 
 
 /*<conheca>*/
@@ -64,9 +63,9 @@ root {
                                                        
 #Cardapio {
      margin-bottom: 4%;
+     margin-right: 22%;
      float: right;
-     position: relative;
-     margin-right: 20%;
+     position: relative; 
 }
 
 
@@ -75,20 +74,37 @@ root {
     width: 100%;
     position: absolute;
     margin-top: 12%;
+    padding-bottom: 10%;
 }
 
 #coca {
+    float: left;
+    position: relative;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+#temp {
     float: right;
     position: relative;
-    margin-top: 14%;
+    margin-top: 13%;
+    margin-right: 15%;
+}
+
+#ven {
+    float: right;
+    position: relative;
+    margin-top: 2%;
+    margin-right: 11%;
 }
 
 #lista {
-    position: relative;
+    position: static;
     width:100%;
-    margin-top: 55%;
+    margin-top: 53.7%;
     border-top: solid;
     border-bottom: solid;
+    background: white;
 }
 
 #botao {
@@ -105,15 +121,24 @@ root {
 /*Index*/
 
 #branco3 {
-    position: fixed;
+    position: absolute;
     width: 100%;
     alignment-adjust: central;
 }
 
 #cadastro {
     width: 50%;
-    float:left;
+    float:right;
+    margin-left: 59%;
+    margin-top: 5%;
+    position: absolute;
+}
+
+#login {
+    width: 50%;
+    float:right;
     margin-left: 35%;
+    margin-top: 3%;
     position: absolute;
 }
 
@@ -124,6 +149,63 @@ root {
     border-radius: 7px;
     padding: 2%;
     padding-bottom: 1%;
-    margin-top: 25%;
+    margin-top: 30%;
     margin-right: 10%;
+}
+
+/*erro*/
+
+#erro {
+    width: 50%;
+    float:left;
+    margin-left: 25%;
+    margin-top:10%;
+    position: absolute;
+}
+
+#pedidoss {
+    width: 50%;
+    float:left;
+    margin-left: 24%;
+    position: absolute;
+    margin-top: 45%;
+}
+
+#listapreco {
+    float:left;
+    position: absolute;
+    width:70%;
+}
+
+/*CONSULTAR*/
+
+#consulta {
+    width: 100%;
+    float: left;
+    margin-top: 7%;
+    margin-left: 25%;
+    position: absolute;
+}
+
+#consulta2 {
+    width: 100%;
+    float: left;
+    margin-top: 7%;
+    margin-left: 35%;
+    position: absolute;
+}
+
+#deletar {
+    width: 50%;
+    float: left;
+    margin-top: 4%;
+    margin-left: 25%;
+    position: absolute;
+}
+
+#entre {
+    float: right;
+    position: relative;
+    margin-top: -2%;
+    margin-right: 36%;
 }

@@ -17,7 +17,7 @@
 <!-- PRIMEIRO -->
 
     <div id="amarelo2">
-        <img src="Imagem/amarelo2.png" width="100%">
+        <img src="Imagem/amarelo3.png" width="100%">
     </div>
 
     <div id="Cardapio">
@@ -27,7 +27,7 @@
     <!-- SEGUNDO -->
 
     <div id="branco2">
-        <img src="Imagem/Branco2.png" width="100%">
+        <img src="Imagem/Branco2.png" width="90%">
     </div>
     
     <div id="coca">
@@ -35,23 +35,23 @@
     </div>
 
     
-    <!--
-    <div>
-        <p>Não perca tempo...</p>
+    
+    <div id="temp">
+        <p><font size="5px" face="Segoe Print">Não perca tempo...</font></p>
     </div>
     
-    <div>
-        <p>venha já!</p>
-    </div>
-    -->
-    
-    
-    <div id="lista">
-        <img src="Imagem/Lista.png" width="100%">
+    <div id="ven">
+        <p><font size="5px" face="Segoe Print">venha já!</font></p>
     </div>
     
     
-        <div id="botao"><a href="logincliente.jsp">
+    
+    <div id="lista" align="center">
+        <img src="Imagem/Lista.png" width="80%">
+    </div>
+    
+    
+        <div id="botao"><a href="index.jsp">
         <p><font size="3px">Faça já o seu pedido!</font></p>
          </a></div>
    

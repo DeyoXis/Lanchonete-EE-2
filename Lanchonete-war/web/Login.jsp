@@ -33,7 +33,7 @@
         <form action="login" method="POST">  
   
      
-            <div id="cadastro">  
+            <div id="login">  
         
                     Usuário:  
                     <input type="text" size="30" name="usuario"><br /><br />                
